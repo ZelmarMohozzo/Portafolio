@@ -107,7 +107,7 @@ const Footer = () => {
                   <span className="text-gray-500">//</span> Cybersecurity Specialist<br/>
                   <span className="text-gray-500">//</span> & Web Developer<br/>
                   <span className="text-gray-500">//</span> +6 años de experiencia<br/>
-                  <span className="text-matrix-500">></span> Construyendo el futuro digital
+                  <span className="text-matrix-500">&gt;</span> Construyendo el futuro digital
                 </p>
               </div>
 
@@ -141,7 +141,7 @@ const Footer = () => {
                       href={link.href}
                       className="text-gray-400 hover:text-matrix-500 transition-colors duration-200 font-mono text-sm flex items-center group"
                     >
-                      <span className="text-matrix-500 mr-2 group-hover:mr-3 transition-all duration-200">></span>
+                      <span className="text-matrix-500 mr-2 group-hover:mr-3 transition-all duration-200">&gt;</span>
                       <span className="group-hover:neon-glow">{link.label}</span>
                     </a>
                   </li>

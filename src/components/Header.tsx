@@ -70,7 +70,7 @@ const Header = () => {
                 className="block py-3 text-gray-300 hover:text-matrix-500 transition-colors duration-200 font-mono"
                 onClick={() => setIsOpen(false)}
               >
-                <span className="text-matrix-500 mr-2">></span>{item.label}
+                <span className="text-matrix-500 mr-2">&gt;</span>{item.label}
               </a>
             ))}
           </div>

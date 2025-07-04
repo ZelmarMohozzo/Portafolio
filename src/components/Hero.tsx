@@ -18,27 +18,6 @@ const Hero = () => {
     return () => clearInterval(timer);
   }, []);
 
-  // Matrix rain effect
-  useEffect(() => {
-    const chars = '01アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン';
-    const createMatrixChar = () => {
-      const char = document.createElement('div');
-      char.className = 'matrix-char';
-      char.textContent = chars[Math.floor(Math.random() * chars.length)];
-      char.style.left = Math.random() * 100 + 'vw';
-      char.style.animationDuration = (Math.random() * 3 + 2) + 's';
-      char.style.opacity = Math.random().toString();
-      document.body.appendChild(char);
-      
-      setTimeout(() => {
-        char.remove();
-      }, 5000);
-    };
-
-    const interval = setInterval(createMatrixChar, 200);
-    return () => clearInterval(interval);
-  }, []);
-
   return (
     <section id="home" className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black relative overflow-hidden">
       {/* Animated background grid */}

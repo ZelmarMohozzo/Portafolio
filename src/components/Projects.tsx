@@ -55,13 +55,13 @@ const Projects = () => {
     },
     {
       id: 5,
-      title: 'Linux Server Hardening Scripts',
-      description: 'Colección de scripts para hardening automático de servidores Linux, implementando mejores prácticas de seguridad y configuraciones optimizadas.',
-      image: 'https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=800',
+      title: 'Linux Hardening Suite',
+      description: 'Suite completa de scripts para hardening automático de servidores Linux. Incluye configuración de usuarios, firewall, fail2ban, SSH hardening y SELinux para máxima seguridad.',
+      image: '/public/9b0e3126-7453-4913-976f-64e0bb27d2a5.png',
       category: 'security',
-      technologies: ['Bash', 'Python', 'Linux', 'iptables', 'fail2ban'],
+      technologies: ['Shell', '.sh', 'SELinux', 'SSH Hardening', 'Firewall'],
       features: ['Auto Hardening', 'Security Monitoring', 'Log Analysis', 'Compliance Checks'],
-      githubUrl: 'https://github.com/ZelmarMohozzo',
+      githubUrl: 'https://github.com/ZelmarMohozzo/linux-hardening-suite',
       liveUrl: '#',
       status: 'Completado'
     },

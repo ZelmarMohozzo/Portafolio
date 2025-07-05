@@ -57,7 +57,7 @@ const Projects = () => {
       id: 5,
       title: 'Linux Hardening Suite',
       description: 'Suite completa de scripts para hardening automático de servidores Linux. Incluye configuración de usuarios, firewall, fail2ban, SSH hardening y SELinux para máxima seguridad.',
-      image: '/public/9b0e3126-7453-4913-976f-64e0bb27d2a5.png',
+      image: '/public/image.png',
       category: 'security',
       technologies: ['Shell', '.sh', 'SELinux', 'SSH Hardening', 'Firewall'],
       features: ['Auto Hardening', 'Security Monitoring', 'Log Analysis', 'Compliance Checks'],

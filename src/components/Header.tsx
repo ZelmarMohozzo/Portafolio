@@ -23,7 +23,9 @@ const Header = () => {
 
   return (
     <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-      scrolled ? 'bg-black/95 backdrop-blur-md shadow-lg border-b border-matrix-500/30' : 'bg-transparent'
+      scrolled 
+        ? 'bg-black/95 backdrop-blur-md shadow-lg border-b border-matrix-500/30' 
+        : 'bg-black/20 backdrop-blur-sm'
     }`}>
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
@@ -62,15 +64,15 @@ const Header = () => {
         </div>
 
         {isOpen && (
-          <div className="md:hidden mt-4 pb-4 border-t border-matrix-500/30">
+          <div className="md:hidden mt-4 pb-4 border-t border-matrix-500/30 bg-black/90 backdrop-blur-md rounded-lg">
             {menuItems.map((item) => (
               <a
                 key={item.href}
                 href={item.href}
-                className="block py-3 text-gray-300 hover:text-matrix-500 transition-colors duration-200 font-mono"
+                className="block py-3 px-4 text-gray-300 hover:text-matrix-500 transition-colors duration-200 font-mono"
                 onClick={() => setIsOpen(false)}
               >
-                <span className="text-matrix-500 mr-2">&gt;</span>{item.label}
+                <span className="text-matrix-500 mr-2">></span>{item.label}
               </a>
             ))}
           </div>

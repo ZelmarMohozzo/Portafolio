@@ -3,7 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 /* Custom CSS Variables */
 :root {
   --matrix-green: #00ff41;
@@ -13,6 +12,23 @@
   --neon-purple: #b026ff;
 }
 
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0f172a;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
 /* Matrix Rain Effect */
 @keyframes matrix-rain {
   0% { transform: translateY(-100vh); opacity: 1; }
@@ -20,12 +36,14 @@
 }
 
 .matrix-char {
-  position: absolute;
+  position: fixed;
   color: var(--matrix-green);
   font-family: 'JetBrains Mono', monospace;
   font-size: 14px;
   animation: matrix-rain 3s linear infinite;
   text-shadow: 0 0 5px var(--matrix-green);
+  z-index: 1;
+  pointer-events: none;
 }
 
 /* Terminal Cursor */

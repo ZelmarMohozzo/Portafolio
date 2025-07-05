@@ -68,8 +68,12 @@ const Expertise = () => {
             {/* Kali Linux Expertise */}
             <div className="neon-border bg-black/50 backdrop-blur-sm rounded-2xl p-8">
               <div className="flex items-center mb-6">
-                <div className="p-3 bg-gradient-to-r from-red-500 to-orange-500 rounded-lg mr-4">
-                  <Shield className="w-6 h-6 text-white" />
+                <div className="w-20 h-20 mr-4 flex items-center justify-center bg-black rounded-lg border border-red-500/50">
+                  <img
+                    src="https://img.icons8.com/?size=256&id=qBWtR72kluCU&format=png"
+                    alt="Kali Linux"
+                    className="w-16 h-16 object-contain"
+                  />
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold text-white font-mono">Kali Linux Expert</h3>

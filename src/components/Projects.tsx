@@ -56,13 +56,13 @@ const Projects = () => {
     {
       id: 5,
       title: 'Linux Hardening Suite',
-      description: 'Una web de presentación del código de hardening, creación de usuario sudo, configuración de firewall, Fail2ban, hardening SSH y SELinux.',
+      description: 'Suite completa de scripts para hardening automático de servidores Linux. Incluye configuración de usuarios, firewall, fail2ban, SSH hardening y SELinux para máxima seguridad.',
       image: '/public/9b0e3126-7453-4913-976f-64e0bb27d2a5.png',
       category: 'security',
       technologies: ['Shell', '.sh', 'SELinux', 'SSH Hardening', 'Firewall'],
       features: ['Auto Hardening', 'Security Monitoring', 'Log Analysis', 'Compliance Checks'],
-      githubUrl: 'https://github.com/ZelmarMohozzo/HARDENING-SCRIPT-WEB',
-      liveUrl: 'https://sr-haze-hardening.netlify.app/',
+      githubUrl: 'https://github.com/ZelmarMohozzo/linux-hardening-suite',
+      liveUrl: '#',
       status: 'Completado'
     },
     {
@@ -211,8 +211,6 @@ const Projects = () => {
                     <a
                       href={project.liveUrl}
                       className="flex items-center space-x-2 text-gray-400 hover:text-cyber-500 transition-colors duration-200 font-mono text-sm"
-                      target="_blank"
-                      rel="noopener noreferrer"
                     >
                       <ExternalLink className="w-4 h-4" />
                       <span>./demo</span>

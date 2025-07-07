@@ -64,38 +64,38 @@ const Expertise = () => {
             </div>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12">
-            {/* Kali Linux Expertise */}
-            <div className="neon-border bg-black/50 backdrop-blur-sm rounded-2xl p-8">
-              <div className="flex items-center mb-6">
-                <div className="w-20 h-20 mr-4 flex items-center justify-center bg-black rounded-lg border border-red-500/50">
+          <div className="space-y-12">
+            {/* Kali Linux Expertise - Larger Section */}
+            <div className="bg-black/50 backdrop-blur-sm rounded-2xl p-12 border border-gray-700">
+              <div className="flex items-center mb-8">
+                <div className="w-24 h-24 mr-6 flex items-center justify-center bg-black rounded-lg border border-gray-600">
                   <img
                     src="https://img.icons8.com/?size=256&id=qBWtR72kluCU&format=png"
                     alt="Kali Linux"
-                    className="w-16 h-16 object-contain"
+                    className="w-20 h-20 object-contain"
                   />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-white font-mono">Kali Linux Expert</h3>
-                  <p className="text-matrix-500 font-mono">Desde 2018 | +6 años</p>
+                  <h3 className="text-3xl font-bold text-white font-mono">Kali Linux Expert</h3>
+                  <p className="text-matrix-500 font-mono text-lg">Desde 2018 | +6 años</p>
                 </div>
               </div>
 
-              <div className="grid grid-cols-1 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {kaliExperience.map((item, index) => (
-                  <div key={index} className="flex items-center space-x-4 p-3 bg-gray-800/30 rounded-lg border border-gray-700 hover:border-matrix-500/50 transition-all duration-300">
-                    <item.icon className={`w-6 h-6 ${item.color}`} />
-                    <span className="text-white font-mono">{item.title}</span>
+                  <div key={index} className="flex items-center space-x-4 p-4 bg-gray-800/30 rounded-lg border border-gray-700 hover:border-gray-600 transition-all duration-300">
+                    <item.icon className={`w-7 h-7 ${item.color}`} />
+                    <span className="text-white font-mono text-lg">{item.title}</span>
                   </div>
                 ))}
               </div>
             </div>
 
-            {/* Web Development Technologies */}
-            <div className="neon-border bg-black/50 backdrop-blur-sm rounded-2xl p-8">
-              <div className="flex items-center mb-6">
-                <div className="p-3 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg mr-4">
-                  <Code className="w-6 h-6 text-white" />
+            {/* Web Development Technologies - Horizontal Layout */}
+            <div className="bg-black/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700">
+              <div className="flex items-center mb-8">
+                <div className="p-4 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg mr-6">
+                  <Code className="w-8 h-8 text-white" />
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold text-white font-mono">Stack Tecnológico</h3>
@@ -103,22 +103,22 @@ const Expertise = () => {
                 </div>
               </div>
 
-              <div className="grid grid-cols-2 gap-6">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
                 {technologies.map((tech, index) => (
                   <div
                     key={index}
                     className="text-center group hover:scale-105 transition-all duration-300"
                   >
-                    <div className="neon-border bg-gray-900/50 rounded-xl p-4 hover:shadow-neon-blue transition-all duration-300">
-                      <div className="w-12 h-12 mx-auto mb-3 flex items-center justify-center bg-white rounded-lg">
+                    <div className="bg-gray-900/50 rounded-xl p-6 hover:bg-gray-800/50 transition-all duration-300 border border-gray-700">
+                      <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center bg-white rounded-lg">
                         <img
                           src={tech.logo}
                           alt={tech.name}
-                          className="w-8 h-8 object-contain"
+                          className="w-12 h-12 object-contain"
                         />
                       </div>
-                      <h4 className="text-white font-bold text-sm mb-1 font-mono">{tech.name}</h4>
-                      <p className="text-gray-400 text-xs">{tech.description}</p>
+                      <h4 className="text-white font-bold text-base mb-2 font-mono">{tech.name}</h4>
+                      <p className="text-gray-400 text-sm">{tech.description}</p>
                     </div>
                   </div>
                 ))}

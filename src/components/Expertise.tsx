@@ -22,6 +22,11 @@ const Expertise = () => {
       name: 'PostgreSQL',
       logo: 'https://img.icons8.com/?size=100&id=xF33DQdGyLDz&format=png',
       description: 'Base de datos relacional'
+    },
+    {
+      name: 'MySQL',
+      logo: '/pngwing.com.png',
+      description: 'Base de datos SQL'
     }
   ];
 
@@ -103,14 +108,14 @@ const Expertise = () => {
                 </div>
               </div>
 
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+              <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
                 {technologies.map((tech, index) => (
                   <div
                     key={index}
                     className="text-center group hover:scale-105 transition-all duration-300"
                   >
                     <div className="bg-gray-900/50 rounded-xl p-6 hover:bg-gray-800/50 transition-all duration-300 border border-gray-700">
-                      <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center bg-white rounded-lg">
+                      <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                         <img
                           src={tech.logo}
                           alt={tech.name}

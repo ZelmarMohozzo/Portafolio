@@ -68,11 +68,11 @@ const Expertise = () => {
             {/* Kali Linux Expertise - Larger Section */}
             <div className="bg-black/50 backdrop-blur-sm rounded-2xl p-12 border border-gray-700">
               <div className="flex items-center mb-8">
-                <div className="w-24 h-24 mr-6 flex items-center justify-center bg-black rounded-lg border border-gray-600">
+                <div className="w-32 h-32 mr-8 flex items-center justify-center">
                   <img
                     src="https://img.icons8.com/?size=256&id=qBWtR72kluCU&format=png"
                     alt="Kali Linux"
-                    className="w-20 h-20 object-contain"
+                    className="w-28 h-28 object-contain"
                   />
                 </div>
                 <div>

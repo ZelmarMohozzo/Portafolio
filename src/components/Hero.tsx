@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { ChevronDown, Github, Linkedin, Mail, Terminal, Lock, Users, Award, Code } from 'lucide-react';
+import { ChevronDown, Github, Linkedin, Mail, Terminal, Lock, Users, Award, Code, Shield, Zap } from 'lucide-react';
 
 const Hero = () => {
   const [text, setText] = useState('');
@@ -64,6 +64,24 @@ const Hero = () => {
       name: 'MySQL',
       logo: '/pngwing.com.png',
       description: 'Base de datos SQL'
+    }
+  ];
+
+  const kaliExperience = [
+    {
+      icon: Terminal,
+      title: 'Pentesting Avanzado',
+      color: 'text-red-400'
+    },
+    {
+      icon: Shield,
+      title: 'Automatización de Auditorías',
+      color: 'text-orange-400'
+    },
+    {
+      icon: Zap,
+      title: 'Ciberseguridad Ofensiva',
+      color: 'text-yellow-400'
     }
   ];
 
@@ -238,6 +256,34 @@ const Hero = () => {
                       <h4 className="text-white font-bold text-base mb-2 font-mono">{tech.name}</h4>
                       <p className="text-gray-400 text-sm">{tech.description}</p>
                     </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Kali Linux Expert Section */}
+          <div className="mb-12">
+            <div className="bg-black/50 backdrop-blur-sm rounded-2xl p-12">
+              <div className="flex items-center mb-8">
+                <div className="w-32 h-32 mr-8 flex items-center justify-center">
+                  <img
+                    src="https://img.icons8.com/?size=256&id=qBWtR72kluCU&format=png"
+                    alt="Kali Linux"
+                    className="w-28 h-28 object-contain"
+                  />
+                </div>
+                <div>
+                  <h3 className="text-3xl font-bold text-white font-mono">Kali Linux Expert</h3>
+                  <p className="text-matrix-500 font-mono text-lg">Desde 2018 | +6 años</p>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                {kaliExperience.map((item, index) => (
+                  <div key={index} className="flex items-center space-x-4 p-4 bg-gray-800/30 rounded-lg hover:bg-gray-700/30 transition-all duration-300">
+                    <item.icon className={`w-7 h-7 ${item.color}`} />
+                    <span className="text-white font-mono text-lg">{item.title}</span>
                   </div>
                 ))}
               </div>

@@ -2,34 +2,6 @@ import React from 'react';
 import { Terminal, Shield, Code, Zap } from 'lucide-react';
 
 const Expertise = () => {
-  const technologies = [
-    {
-      name: 'Node.js',
-      logo: 'https://img.icons8.com/?size=256&id=54087&format=png',
-      description: 'Backends robustos'
-    },
-    {
-      name: 'Next.js',
-      logo: 'https://www.drupal.org/files/project-images/nextjs-icon-dark-background.png',
-      description: 'SSR y sitios estáticos'
-    },
-    {
-      name: 'TypeScript',
-      logo: 'https://img.icons8.com/?size=100&id=Xf1sHBmY73hA&format=png',
-      description: 'Desarrollo tipado'
-    },
-    {
-      name: 'PostgreSQL',
-      logo: 'https://img.icons8.com/?size=100&id=xF33DQdGyLDz&format=png',
-      description: 'Base de datos relacional'
-    },
-    {
-      name: 'MySQL',
-      logo: '/pngwing.com.png',
-      description: 'Base de datos SQL'
-    }
-  ];
-
   const kaliExperience = [
     {
       icon: Terminal,
@@ -91,40 +63,6 @@ const Expertise = () => {
                   <div key={index} className="flex items-center space-x-4 p-4 bg-gray-800/30 rounded-lg border border-gray-700 hover:border-gray-600 transition-all duration-300">
                     <item.icon className={`w-7 h-7 ${item.color}`} />
                     <span className="text-white font-mono text-lg">{item.title}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Web Development Technologies - Horizontal Layout */}
-            <div className="bg-black/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700">
-              <div className="flex items-center mb-8">
-                <div className="p-4 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg mr-6">
-                  <Code className="w-8 h-8 text-white" />
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold text-white font-mono">Stack Tecnológico</h3>
-                  <p className="text-cyber-500 font-mono">Desarrollo web moderno</p>
-                </div>
-              </div>
-
-              <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
-                {technologies.map((tech, index) => (
-                  <div
-                    key={index}
-                    className="text-center group hover:scale-105 transition-all duration-300"
-                  >
-                    <div className="bg-gray-900/50 rounded-xl p-6 hover:bg-gray-800/50 transition-all duration-300 border border-gray-700">
-                      <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                        <img
-                          src={tech.logo}
-                          alt={tech.name}
-                          className="w-12 h-12 object-contain"
-                        />
-                      </div>
-                      <h4 className="text-white font-bold text-base mb-2 font-mono">{tech.name}</h4>
-                      <p className="text-gray-400 text-sm">{tech.description}</p>
-                    </div>
                   </div>
                 ))}
               </div>

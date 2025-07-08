@@ -91,41 +91,25 @@ const Hero = () => {
       'Burp Suite Professional',
       'OWASP ZAP',
       'Metasploit Framework',
-      'Nmap & Nessus',
-      'SQLmap',
-      'Nikto',
-      'Gobuster',
-      'Hydra & John the Ripper'
+      'Nmap & Nessus'
     ],
     forensics: [
       'Autopsy',
       'Volatility',
       'Wireshark',
-      'Sleuth Kit',
-      'FTK Imager',
-      'Binwalk',
-      'Foremost',
-      'Hashcat'
+      'Sleuth Kit'
     ],
     networking: [
       'Aircrack-ng',
       'Kismet',
       'Ettercap',
-      'Tcpdump',
-      'Netcat',
-      'Masscan',
-      'Zmap',
-      'Hping3'
+      'Tcpdump'
     ],
     exploitation: [
       'Exploit-DB',
       'Searchsploit',
       'Msfvenom',
-      'Social Engineer Toolkit',
-      'BeEF',
-      'Empire',
-      'Cobalt Strike',
-      'Custom Exploits'
+      'BeEF'
     ]
   };
   return (
@@ -342,16 +326,16 @@ const Hero = () => {
 
               {/* Detailed Skills Modal/Overlay */}
               {showSkills && (
-                <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-[9999] flex items-start justify-center p-4 overflow-y-auto">
-                  <div className="bg-gray-900 rounded-2xl border border-matrix-500/30 max-w-7xl w-full my-8 min-h-fit">
-                    <div className="p-6">
+                <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-[9999] flex items-center justify-center p-4">
+                  <div className="bg-gray-900 rounded-2xl border border-matrix-500/30 max-w-5xl w-full max-h-[80vh]">
+                    <div className="p-8">
                       <div className="flex items-center justify-between mb-8">
                         <div className="flex items-center space-x-4">
                           <div className="p-3 bg-matrix-500/20 rounded-lg">
                             <Terminal className="w-8 h-8 text-matrix-500" />
                           </div>
                           <div>
-                            <h3 className="text-3xl font-bold text-white font-mono">Herramientas & Skills</h3>
+                            <h3 className="text-2xl font-bold text-white font-mono">Herramientas & Skills</h3>
                             <p className="text-matrix-500 font-mono">Kali Linux | Ciberseguridad | Informática Forense</p>
                           </div>
                         </div>
@@ -363,14 +347,14 @@ const Hero = () => {
                         </button>
                       </div>
 
-                      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
+                      <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
                         <div className="space-y-4">
                           <div className="flex items-center space-x-3 mb-4">
                             <Shield className="w-6 h-6 text-red-400" />
-                            <h4 className="text-xl font-bold text-white font-mono">Pentesting</h4>
+                            <h4 className="text-lg font-bold text-white font-mono">Pentesting</h4>
                           </div>
                           {detailedSkills.pentesting.map((skill, index) => (
-                            <div key={index} className="flex items-center space-x-3 p-2 bg-black/30 rounded-lg border border-red-500/20">
+                            <div key={index} className="flex items-center space-x-3 p-3 bg-black/30 rounded-lg border border-red-500/20">
                               <div className="w-2 h-2 bg-red-400 rounded-full"></div>
                               <span className="text-gray-300 font-mono text-sm">{skill}</span>
                             </div>
@@ -380,10 +364,10 @@ const Hero = () => {
                         <div className="space-y-4">
                           <div className="flex items-center space-x-3 mb-4">
                             <Terminal className="w-6 h-6 text-blue-400" />
-                            <h4 className="text-xl font-bold text-white font-mono">Forense</h4>
+                            <h4 className="text-lg font-bold text-white font-mono">Forense</h4>
                           </div>
                           {detailedSkills.forensics.map((skill, index) => (
-                            <div key={index} className="flex items-center space-x-3 p-2 bg-black/30 rounded-lg border border-blue-500/20">
+                            <div key={index} className="flex items-center space-x-3 p-3 bg-black/30 rounded-lg border border-blue-500/20">
                               <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
                               <span className="text-gray-300 font-mono text-sm">{skill}</span>
                             </div>
@@ -393,10 +377,10 @@ const Hero = () => {
                         <div className="space-y-4">
                           <div className="flex items-center space-x-3 mb-4">
                             <Zap className="w-6 h-6 text-yellow-400" />
-                            <h4 className="text-xl font-bold text-white font-mono">Networking</h4>
+                            <h4 className="text-lg font-bold text-white font-mono">Networking</h4>
                           </div>
                           {detailedSkills.networking.map((skill, index) => (
-                            <div key={index} className="flex items-center space-x-3 p-2 bg-black/30 rounded-lg border border-yellow-500/20">
+                            <div key={index} className="flex items-center space-x-3 p-3 bg-black/30 rounded-lg border border-yellow-500/20">
                               <div className="w-2 h-2 bg-yellow-400 rounded-full"></div>
                               <span className="text-gray-300 font-mono text-sm">{skill}</span>
                             </div>
@@ -406,10 +390,10 @@ const Hero = () => {
                         <div className="space-y-4">
                           <div className="flex items-center space-x-3 mb-4">
                             <Lock className="w-6 h-6 text-purple-400" />
-                            <h4 className="text-xl font-bold text-white font-mono">Explotación</h4>
+                            <h4 className="text-lg font-bold text-white font-mono">Explotación</h4>
                           </div>
                           {detailedSkills.exploitation.map((skill, index) => (
-                            <div key={index} className="flex items-center space-x-3 p-2 bg-black/30 rounded-lg border border-purple-500/20">
+                            <div key={index} className="flex items-center space-x-3 p-3 bg-black/30 rounded-lg border border-purple-500/20">
                               <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
                               <span className="text-gray-300 font-mono text-sm">{skill}</span>
                             </div>
@@ -417,34 +401,24 @@ const Hero = () => {
                         </div>
                       </div>
 
-                      <div className="p-4 bg-matrix-500/10 rounded-lg border border-matrix-500/30">
+                      <div className="p-6 bg-matrix-500/10 rounded-lg border border-matrix-500/30">
                         <div className="flex items-center space-x-3 mb-4">
                           <Award className="w-6 h-6 text-matrix-500" />
-                          <h4 className="text-xl font-bold text-white font-mono">Certificaciones & Experiencia</h4>
+                          <h4 className="text-lg font-bold text-white font-mono">Experiencia</h4>
                         </div>
-                        <div className="grid md:grid-cols-2 gap-4">
-                          <div className="space-y-2">
-                            <p className="text-gray-300 font-mono text-sm">
-                              <span className="text-matrix-500">&gt;</span> +6 años de experiencia práctica
-                            </p>
-                            <p className="text-gray-300 font-mono text-sm">
-                              <span className="text-matrix-500">&gt;</span> Pentesting en entornos reales
-                            </p>
-                            <p className="text-gray-300 font-mono text-sm">
-                              <span className="text-matrix-500">&gt;</span> Formación en Code Society
-                            </p>
-                          </div>
-                          <div className="space-y-2">
-                            <p className="text-gray-300 font-mono text-sm">
-                              <span className="text-matrix-500">&gt;</span> Auditorías de seguridad
-                            </p>
-                            <p className="text-gray-300 font-mono text-sm">
-                              <span className="text-matrix-500">&gt;</span> Análisis forense digital
-                            </p>
-                            <p className="text-gray-300 font-mono text-sm">
-                              <span className="text-matrix-500">&gt;</span> Desarrollo de exploits custom
-                            </p>
-                          </div>
+                        <div className="grid grid-cols-2 gap-6">
+                          <p className="text-gray-300 font-mono text-sm">
+                            <span className="text-matrix-500">></span> +6 años experiencia práctica
+                          </p>
+                          <p className="text-gray-300 font-mono text-sm">
+                            <span className="text-matrix-500">></span> Pentesting en entornos reales
+                          </p>
+                          <p className="text-gray-300 font-mono text-sm">
+                            <span className="text-matrix-500">></span> Formación en Code Society
+                          </p>
+                          <p className="text-gray-300 font-mono text-sm">
+                            <span className="text-matrix-500">></span> Auditorías de seguridad
+                          </p>
                         </div>
                       </div>
                     </div>

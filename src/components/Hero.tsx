@@ -401,32 +401,6 @@ const Hero = () => {
                         </div>
                       </div>
 
-                      <div className="p-6 bg-matrix-500/10 rounded-lg border border-matrix-500/30 mb-4">
-                        <div className="flex items-center space-x-3 mb-4">
-                          <Award className="w-6 h-6 text-matrix-500" />
-                          <h4 className="text-lg font-bold text-white font-mono">Experiencia</h4>
-                        </div>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                          <p className="text-gray-300 font-mono text-sm">
-                            <span className="text-matrix-500">&gt;</span> +6 años experiencia práctica
-                          </p>
-                          <p className="text-gray-300 font-mono text-sm">
-                            <span className="text-matrix-500">&gt;</span> Pentesting en entornos reales
-                          </p>
-                          <p className="text-gray-300 font-mono text-sm">
-                            <span className="text-matrix-500">&gt;</span> Formación en Code Society
-                          </p>
-                          <p className="text-gray-300 font-mono text-sm">
-                            <span className="text-matrix-500">&gt;</span> Auditorías de seguridad
-                          </p>
-                          <p className="text-gray-300 font-mono text-sm">
-                            <span className="text-matrix-500">&gt;</span> Análisis forense digital
-                          </p>
-                          <p className="text-gray-300 font-mono text-sm">
-                            <span className="text-matrix-500">&gt;</span> Desarrollo de exploits custom
-                          </p>
-                        </div>
-                      </div>
                     </div>
                   </div>
                 </div>

@@ -425,24 +425,24 @@ const Hero = () => {
                         <div className="grid md:grid-cols-2 gap-4">
                           <div className="space-y-2">
                             <p className="text-gray-300 font-mono text-sm">
-                              <span className="text-matrix-500">></span> +6 años de experiencia práctica
+                              <span className="text-matrix-500">&gt;</span> +6 años de experiencia práctica
                             </p>
                             <p className="text-gray-300 font-mono text-sm">
-                              <span className="text-matrix-500">></span> Pentesting en entornos reales
+                              <span className="text-matrix-500">&gt;</span> Pentesting en entornos reales
                             </p>
                             <p className="text-gray-300 font-mono text-sm">
-                              <span className="text-matrix-500">></span> Formación en Code Society
+                              <span className="text-matrix-500">&gt;</span> Formación en Code Society
                             </p>
                           </div>
                           <div className="space-y-2">
                             <p className="text-gray-300 font-mono text-sm">
-                              <span className="text-matrix-500">></span> Auditorías de seguridad
+                              <span className="text-matrix-500">&gt;</span> Auditorías de seguridad
                             </p>
                             <p className="text-gray-300 font-mono text-sm">
-                              <span className="text-matrix-500">></span> Análisis forense digital
+                              <span className="text-matrix-500">&gt;</span> Análisis forense digital
                             </p>
                             <p className="text-gray-300 font-mono text-sm">
-                              <span className="text-matrix-500">></span> Desarrollo de exploits custom
+                              <span className="text-matrix-500">&gt;</span> Desarrollo de exploits custom
                             </p>
                           </div>
                         </div>

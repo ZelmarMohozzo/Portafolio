@@ -342,7 +342,7 @@ const Hero = () => {
 
               {/* Detailed Skills Modal/Overlay */}
               {showSkills && (
-                <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-6">
+                <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-[9999] flex items-center justify-center p-6">
                   <div className="bg-gray-900 rounded-2xl border border-matrix-500/30 max-w-7xl w-full max-h-[95vh] overflow-y-auto">
                     <div className="p-6">
                       <div className="flex items-center justify-between mb-8">

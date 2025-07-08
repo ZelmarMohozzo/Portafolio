@@ -342,8 +342,8 @@ const Hero = () => {
 
               {/* Detailed Skills Modal/Overlay */}
               {showSkills && (
-                <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-[9999] flex items-center justify-center p-6">
-                  <div className="bg-gray-900 rounded-2xl border border-matrix-500/30 max-w-7xl w-full max-h-[95vh] overflow-y-auto">
+                <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-[9999] flex items-start justify-center p-4 overflow-y-auto">
+                  <div className="bg-gray-900 rounded-2xl border border-matrix-500/30 max-w-7xl w-full my-8 min-h-fit">
                     <div className="p-6">
                       <div className="flex items-center justify-between mb-8">
                         <div className="flex items-center space-x-4">
@@ -363,7 +363,7 @@ const Hero = () => {
                         </button>
                       </div>
 
-                      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
                         <div className="space-y-4">
                           <div className="flex items-center space-x-3 mb-4">
                             <Shield className="w-6 h-6 text-red-400" />
@@ -417,7 +417,7 @@ const Hero = () => {
                         </div>
                       </div>
 
-                      <div className="mt-6 p-4 bg-matrix-500/10 rounded-lg border border-matrix-500/30">
+                      <div className="p-4 bg-matrix-500/10 rounded-lg border border-matrix-500/30">
                         <div className="flex items-center space-x-3 mb-4">
                           <Award className="w-6 h-6 text-matrix-500" />
                           <h4 className="text-xl font-bold text-white font-mono">Certificaciones & Experiencia</h4>

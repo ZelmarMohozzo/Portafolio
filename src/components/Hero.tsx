@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { ChevronDown, Github, Linkedin, Mail, Terminal, Lock, Users, Award, Code, Shield, Zap } from 'lucide-react';
+import { ChevronDown, Github, Linkedin, Mail, Terminal, Lock, Users, Award, Code, Shield, Zap, Eye, X } from 'lucide-react';
 
 const Hero = () => {
   const [text, setText] = useState('');
+  const [showSkills, setShowSkills] = useState(false);
   const fullText = 'Zelmar Mohozzo';
   
   useEffect(() => {
@@ -85,6 +86,48 @@ const Hero = () => {
     }
   ];
 
+  const detailedSkills = {
+    pentesting: [
+      'Burp Suite Professional',
+      'OWASP ZAP',
+      'Metasploit Framework',
+      'Nmap & Nessus',
+      'SQLmap',
+      'Nikto',
+      'Gobuster',
+      'Hydra & John the Ripper'
+    ],
+    forensics: [
+      'Autopsy',
+      'Volatility',
+      'Wireshark',
+      'Sleuth Kit',
+      'FTK Imager',
+      'Binwalk',
+      'Foremost',
+      'Hashcat'
+    ],
+    networking: [
+      'Aircrack-ng',
+      'Kismet',
+      'Ettercap',
+      'Tcpdump',
+      'Netcat',
+      'Masscan',
+      'Zmap',
+      'Hping3'
+    ],
+    exploitation: [
+      'Exploit-DB',
+      'Searchsploit',
+      'Msfvenom',
+      'Social Engineer Toolkit',
+      'BeEF',
+      'Empire',
+      'Cobalt Strike',
+      'Custom Exploits'
+    ]
+  };
   return (
     <section id="home" className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black relative overflow-hidden pt-20">
       {/* Animated background grid */}

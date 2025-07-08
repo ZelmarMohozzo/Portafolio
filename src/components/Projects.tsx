@@ -31,12 +31,12 @@ const Projects = () => {
     },
     {
       id: 3,
-      title: 'Security Audit Framework',
-      description: 'Framework personalizado para auditorías de seguridad automatizadas, desarrollado durante mi tiempo en Code Society para testing de proyectos internos.',
-      image: 'https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=800',
-      category: 'security',
-      technologies: ['Python', 'Bash', 'OWASP ZAP', 'Nmap', 'Custom Scripts'],
-      features: ['Automated Scanning', 'OWASP Compliance', 'Custom Reports', 'Integration Ready'],
+      title: 'Panel para analizar datos',
+      description: 'Dashboard interactivo para análisis y visualización de datos en tiempo real. Incluye métricas avanzadas, gráficos dinámicos y reportes automatizados para toma de decisiones basada en datos.',
+      image: 'https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800',
+      category: 'development',
+      technologies: ['React', 'D3.js', 'Python', 'FastAPI', 'PostgreSQL'],
+      features: ['Real-time Analytics', 'Interactive Charts', 'Custom Reports', 'Data Export'],
       githubUrl: 'https://github.com/ZelmarMohozzo',
       liveUrl: '#',
       status: 'Completado'

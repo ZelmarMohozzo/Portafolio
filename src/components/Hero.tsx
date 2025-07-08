@@ -343,8 +343,8 @@ const Hero = () => {
               {/* Detailed Skills Modal/Overlay */}
               {showSkills && (
                 <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-6">
-                  <div className="bg-gray-900 rounded-2xl border border-matrix-500/30 max-w-6xl w-full max-h-[90vh] overflow-y-auto">
-                    <div className="p-8">
+                  <div className="bg-gray-900 rounded-2xl border border-matrix-500/30 max-w-7xl w-full max-h-[95vh] overflow-y-auto">
+                    <div className="p-6">
                       <div className="flex items-center justify-between mb-8">
                         <div className="flex items-center space-x-4">
                           <div className="p-3 bg-matrix-500/20 rounded-lg">
@@ -363,14 +363,14 @@ const Hero = () => {
                         </button>
                       </div>
 
-                      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                         <div className="space-y-4">
                           <div className="flex items-center space-x-3 mb-4">
                             <Shield className="w-6 h-6 text-red-400" />
                             <h4 className="text-xl font-bold text-white font-mono">Pentesting</h4>
                           </div>
                           {detailedSkills.pentesting.map((skill, index) => (
-                            <div key={index} className="flex items-center space-x-3 p-3 bg-black/30 rounded-lg border border-red-500/20">
+                            <div key={index} className="flex items-center space-x-3 p-2 bg-black/30 rounded-lg border border-red-500/20">
                               <div className="w-2 h-2 bg-red-400 rounded-full"></div>
                               <span className="text-gray-300 font-mono text-sm">{skill}</span>
                             </div>
@@ -383,7 +383,7 @@ const Hero = () => {
                             <h4 className="text-xl font-bold text-white font-mono">Forense</h4>
                           </div>
                           {detailedSkills.forensics.map((skill, index) => (
-                            <div key={index} className="flex items-center space-x-3 p-3 bg-black/30 rounded-lg border border-blue-500/20">
+                            <div key={index} className="flex items-center space-x-3 p-2 bg-black/30 rounded-lg border border-blue-500/20">
                               <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
                               <span className="text-gray-300 font-mono text-sm">{skill}</span>
                             </div>
@@ -396,7 +396,7 @@ const Hero = () => {
                             <h4 className="text-xl font-bold text-white font-mono">Networking</h4>
                           </div>
                           {detailedSkills.networking.map((skill, index) => (
-                            <div key={index} className="flex items-center space-x-3 p-3 bg-black/30 rounded-lg border border-yellow-500/20">
+                            <div key={index} className="flex items-center space-x-3 p-2 bg-black/30 rounded-lg border border-yellow-500/20">
                               <div className="w-2 h-2 bg-yellow-400 rounded-full"></div>
                               <span className="text-gray-300 font-mono text-sm">{skill}</span>
                             </div>
@@ -409,7 +409,7 @@ const Hero = () => {
                             <h4 className="text-xl font-bold text-white font-mono">Explotación</h4>
                           </div>
                           {detailedSkills.exploitation.map((skill, index) => (
-                            <div key={index} className="flex items-center space-x-3 p-3 bg-black/30 rounded-lg border border-purple-500/20">
+                            <div key={index} className="flex items-center space-x-3 p-2 bg-black/30 rounded-lg border border-purple-500/20">
                               <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
                               <span className="text-gray-300 font-mono text-sm">{skill}</span>
                             </div>
@@ -417,7 +417,7 @@ const Hero = () => {
                         </div>
                       </div>
 
-                      <div className="mt-8 p-6 bg-matrix-500/10 rounded-lg border border-matrix-500/30">
+                      <div className="mt-6 p-4 bg-matrix-500/10 rounded-lg border border-matrix-500/30">
                         <div className="flex items-center space-x-3 mb-4">
                           <Award className="w-6 h-6 text-matrix-500" />
                           <h4 className="text-xl font-bold text-white font-mono">Certificaciones & Experiencia</h4>

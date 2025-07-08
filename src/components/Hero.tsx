@@ -307,7 +307,16 @@ const Hero = () => {
 
           {/* Kali Linux Expert Section */}
           <div className="mb-12">
-            <div className="bg-black/50 backdrop-blur-sm rounded-2xl p-12">
+            <div className="bg-black/50 backdrop-blur-sm rounded-2xl p-12 relative">
+              {/* Skills Button */}
+              <button
+                onClick={() => setShowSkills(!showSkills)}
+                className="absolute top-6 right-6 flex items-center space-x-2 bg-matrix-500/20 hover:bg-matrix-500/30 border border-matrix-500/50 text-matrix-500 px-4 py-2 rounded-lg transition-all duration-200 hover:scale-105 font-mono text-sm"
+              >
+                <Eye className="w-4 h-4" />
+                <span>{showSkills ? 'Ocultar' : 'Ver'} Skills</span>
+              </button>
+
               <div className="flex items-center mb-8">
                 <div className="w-32 h-32 mr-8 flex items-center justify-center">
                   <img
@@ -330,6 +339,118 @@ const Hero = () => {
                   </div>
                 ))}
               </div>
+
+              {/* Detailed Skills Modal/Overlay */}
+              {showSkills && (
+                <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-6">
+                  <div className="bg-gray-900 rounded-2xl border border-matrix-500/30 max-w-6xl w-full max-h-[90vh] overflow-y-auto">
+                    <div className="p-8">
+                      <div className="flex items-center justify-between mb-8">
+                        <div className="flex items-center space-x-4">
+                          <div className="p-3 bg-matrix-500/20 rounded-lg">
+                            <Terminal className="w-8 h-8 text-matrix-500" />
+                          </div>
+                          <div>
+                            <h3 className="text-3xl font-bold text-white font-mono">Herramientas & Skills</h3>
+                            <p className="text-matrix-500 font-mono">Kali Linux | Ciberseguridad | Informática Forense</p>
+                          </div>
+                        </div>
+                        <button
+                          onClick={() => setShowSkills(false)}
+                          className="p-3 bg-red-500/20 hover:bg-red-500/30 border border-red-500/50 text-red-400 rounded-lg transition-all duration-200 hover:scale-105"
+                        >
+                          <X className="w-6 h-6" />
+                        </button>
+                      </div>
+
+                      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <div className="space-y-4">
+                          <div className="flex items-center space-x-3 mb-4">
+                            <Shield className="w-6 h-6 text-red-400" />
+                            <h4 className="text-xl font-bold text-white font-mono">Pentesting</h4>
+                          </div>
+                          {detailedSkills.pentesting.map((skill, index) => (
+                            <div key={index} className="flex items-center space-x-3 p-3 bg-black/30 rounded-lg border border-red-500/20">
+                              <div className="w-2 h-2 bg-red-400 rounded-full"></div>
+                              <span className="text-gray-300 font-mono text-sm">{skill}</span>
+                            </div>
+                          ))}
+                        </div>
+
+                        <div className="space-y-4">
+                          <div className="flex items-center space-x-3 mb-4">
+                            <Terminal className="w-6 h-6 text-blue-400" />
+                            <h4 className="text-xl font-bold text-white font-mono">Forense</h4>
+                          </div>
+                          {detailedSkills.forensics.map((skill, index) => (
+                            <div key={index} className="flex items-center space-x-3 p-3 bg-black/30 rounded-lg border border-blue-500/20">
+                              <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
+                              <span className="text-gray-300 font-mono text-sm">{skill}</span>
+                            </div>
+                          ))}
+                        </div>
+
+                        <div className="space-y-4">
+                          <div className="flex items-center space-x-3 mb-4">
+                            <Zap className="w-6 h-6 text-yellow-400" />
+                            <h4 className="text-xl font-bold text-white font-mono">Networking</h4>
+                          </div>
+                          {detailedSkills.networking.map((skill, index) => (
+                            <div key={index} className="flex items-center space-x-3 p-3 bg-black/30 rounded-lg border border-yellow-500/20">
+                              <div className="w-2 h-2 bg-yellow-400 rounded-full"></div>
+                              <span className="text-gray-300 font-mono text-sm">{skill}</span>
+                            </div>
+                          ))}
+                        </div>
+
+                        <div className="space-y-4">
+                          <div className="flex items-center space-x-3 mb-4">
+                            <Lock className="w-6 h-6 text-purple-400" />
+                            <h4 className="text-xl font-bold text-white font-mono">Explotación</h4>
+                          </div>
+                          {detailedSkills.exploitation.map((skill, index) => (
+                            <div key={index} className="flex items-center space-x-3 p-3 bg-black/30 rounded-lg border border-purple-500/20">
+                              <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
+                              <span className="text-gray-300 font-mono text-sm">{skill}</span>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+
+                      <div className="mt-8 p-6 bg-matrix-500/10 rounded-lg border border-matrix-500/30">
+                        <div className="flex items-center space-x-3 mb-4">
+                          <Award className="w-6 h-6 text-matrix-500" />
+                          <h4 className="text-xl font-bold text-white font-mono">Certificaciones & Experiencia</h4>
+                        </div>
+                        <div className="grid md:grid-cols-2 gap-4">
+                          <div className="space-y-2">
+                            <p className="text-gray-300 font-mono text-sm">
+                              <span className="text-matrix-500">></span> +6 años de experiencia práctica
+                            </p>
+                            <p className="text-gray-300 font-mono text-sm">
+                              <span className="text-matrix-500">></span> Pentesting en entornos reales
+                            </p>
+                            <p className="text-gray-300 font-mono text-sm">
+                              <span className="text-matrix-500">></span> Formación en Code Society
+                            </p>
+                          </div>
+                          <div className="space-y-2">
+                            <p className="text-gray-300 font-mono text-sm">
+                              <span className="text-matrix-500">></span> Auditorías de seguridad
+                            </p>
+                            <p className="text-gray-300 font-mono text-sm">
+                              <span className="text-matrix-500">></span> Análisis forense digital
+                            </p>
+                            <p className="text-gray-300 font-mono text-sm">
+                              <span className="text-matrix-500">></span> Desarrollo de exploits custom
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         </div>
